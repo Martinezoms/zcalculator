@@ -6,12 +6,12 @@ import './App.css';
 
 function App() {
   return (
-    <div className="pa5">
-      <div className="center w-25 h-100">
+    <div className="w-100 center center  App ">
+      <div className="center center  w-70 w-50-m w-25-l bg-white-90 ma5">
         <DisplayScreen />
         <Buttons />
       </div>
-      <FloatButton className="right w-100 h-100" />
+      <FloatButton className="right w-100 " />
     </div>
   );
 }
