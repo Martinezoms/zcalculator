@@ -4,3 +4,9 @@
   margin-top: auto;
   margin-bottom: auto;
 }
+
+.frame {
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 5px;
+}
