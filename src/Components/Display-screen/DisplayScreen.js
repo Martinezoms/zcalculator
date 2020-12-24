@@ -3,7 +3,7 @@ import './displayScreen.css';
 export default function displayScreen() {
   return (
     <div>
-      <form className="flex flex-column display">
+      <form className="flex flex-column display pa2">
         <textarea className="output-screen" rows="8">
           output
         </textarea>
