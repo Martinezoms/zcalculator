@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="w-100 center center  App h-100 ">
       <div className="center center frame w-70 w-50-m w-25-l ma5">
+        <h3>Zcalculator</h3>
         <DisplayScreen />
         <Buttons />
       </div>

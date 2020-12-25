@@ -1,6 +1,5 @@
-.button {
+.buttons {
   justify-content: space-between;
-  position: static;
 }
 
 .equal {
@@ -8,4 +7,11 @@
   width: 46%;
   outline: none;
   border-radius: 5px;
+}
+.equal:hover {
+  background: rgb(7, 150, 239);
+}
+.equal:active {
+  background: white;
+  transition: background-color 0.5s ease-out;
 }
