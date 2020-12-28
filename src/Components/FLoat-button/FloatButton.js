@@ -2,12 +2,12 @@ import './floatButton.css';
 
 export default function floatButton() {
   return (
-    <div class="wrapper">
-      <input id="triggerButton" class="triggerButton" type="checkbox" />
-      <label for="triggerButton"></label>
-      <div class="one fa fa-facebook"></div>
-      <div class="two fa fa-twitter"></div>
-      <div class="three fa fa-instagram"></div>
+    <div className="wrapper">
+      <input id="triggerButton" className="triggerButton" type="checkbox" />
+      <label for="triggerButton" className="grow shadow-5"></label>
+      <div className="one fa fa-facebook"></div>
+      <div className="two fa fa-twitter"></div>
+      <div className="three fa fa-instagram"></div>
     </div>
   );
 }
