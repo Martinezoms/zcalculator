@@ -118,5 +118,5 @@ body {
 .triggerButton:checked ~ .one:hover,
 .triggerButton:checked ~ .two:hover,
 .triggerButton:checked ~ .three:hover {
-  opacity: 0.9;
+  opacity: 0.5;
 }

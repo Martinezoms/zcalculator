@@ -1,36 +1,80 @@
+import React from 'react';
+
 import './buttons.css';
 
-export default function buttons() {
+function buttons({ handleClick }) {
   return (
     <div className="flex flex-wrap buttons">
       <button className=" w-20 pa2 br5 ma1 ">C</button>
-      <button className=" w-20 pa2 br5 ma1 ">(</button>
-      <button className=" w-20 pa2 br5 ma1 ">)</button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        (
+      </button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        )
+      </button>
       <button className=" w-20 pa2 br5 ma1 ">&#8617;</button>
 
-      <button className=" w-20 pa2 br5 ma1 ">7</button>
-      <button className=" w-20 pa2 br5 ma1 ">8</button>
-      <button className=" w-20 pa2 br5 ma1 ">9</button>
-      <button className=" w-20 pa2 br5 ma1 ">&#247;</button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        7
+      </button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        8
+      </button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        9
+      </button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        &#247;
+      </button>
 
-      <button className=" w-20 pa2 br5 ma1 ">4</button>
-      <button className=" w-20 pa2 br5 ma1 ">5</button>
-      <button className=" w-20 pa2 br5 ma1 ">6</button>
-      <button className=" w-20 pa2 br5 ma1 ">*</button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        4
+      </button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        5
+      </button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        6
+      </button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        *
+      </button>
 
-      <button className=" w-20 pa2 br5 ma1 ">1</button>
-      <button className=" w-20 pa2 br5 ma1 ">2</button>
-      <button className=" w-20 pa2 br5 ma1 ">3</button>
-      <button className=" w-20 pa2 br5 ma1 ">-</button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        1
+      </button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        2
+      </button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        3
+      </button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        -
+      </button>
 
-      <button className=" w-20 pa2 br5 ma1 ">0</button>
-      <button className=" w-20 pa2 br5 ma1 ">.</button>
-      <button className=" w-20 pa2 br5 ma1 ">%</button>
-      <button className=" w-20 pa2 br5 ma1 ">+</button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        0
+      </button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        .
+      </button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        %
+      </button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        +
+      </button>
 
-      <button className=" w-20 pa2 br5 ma1 ">&radic;</button>
-      <button className=" w-20 pa2 br5 ma1 ">^</button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        &radic;
+      </button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+        ^
+      </button>
       <button className="  pa2 br5 ma1 equal">=</button>
     </div>
   );
 }
+
+export default buttons;
