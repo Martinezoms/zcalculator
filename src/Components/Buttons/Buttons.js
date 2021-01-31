@@ -2,7 +2,7 @@ import React from 'react';
 
 import './buttons.css';
 
-function buttons({ handleClick, clearData }) {
+function buttons({ handleClick, clearData, deleteBtn }) {
   return (
     <div className="flex flex-wrap buttons">
       <button className=" w-20 pa2 br5 ma1 " onClick={clearData}>
@@ -14,7 +14,9 @@ function buttons({ handleClick, clearData }) {
       <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
         )
       </button>
-      <button className=" w-20 pa2 br5 ma1 ">&#8617;</button>
+      <button className=" w-20 pa2 br5 ma1 " onClick={deleteBtn}>
+        &#8617;
+      </button>
 
       <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
         7

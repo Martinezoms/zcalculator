@@ -16,11 +16,15 @@ function CalculatorV() {
     setInput('');
   };
 
+  const deleteBtn = () => {
+    setInput(input.slice(0, -1));
+  };
+
   return (
     <div className="center center frame w-70 w-50-m w-25-l ma5 shadow-3">
       <h3>Zcalculator</h3>
       <DisplayScreen input={input} />
-      <Buttons handleClick={handleClick} clearData={clearData} />
+      <Buttons handleClick={handleClick} clearData={clearData} deleteBtn={deleteBtn} />
     </div>
   );
 }
