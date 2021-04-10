@@ -2,7 +2,7 @@ import React from 'react';
 
 import './buttons.css';
 
-function buttons({ handleClick, clearData, deleteBtn }) {
+function buttons({ handleClick, clearData, deleteBtn, evaluateInput }) {
   return (
     <div className="flex flex-wrap buttons">
       <button className=" w-20 pa2 br5 ma1 " onClick={clearData}>
@@ -76,7 +76,9 @@ function buttons({ handleClick, clearData, deleteBtn }) {
       <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
         ^
       </button>
-      <button className="  pa2 br5 ma1 equal">=</button>
+      <button className="  pa2 br5 ma1 equal" onClick={evaluateInput}>
+        =
+      </button>
     </div>
   );
 }
