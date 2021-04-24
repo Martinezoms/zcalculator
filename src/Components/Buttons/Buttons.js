@@ -2,7 +2,8 @@ import React from 'react';
 
 import './buttons.css';
 
-function buttons({ handleClick, clearData, deleteBtn, evaluateInput }) {
+function buttons({ handleClick, clearData, deleteBtn, evaluateInput, handleSqrt }) {
+  // const sqroot = '&radic';
   return (
     <div className="flex flex-wrap buttons">
       <button className=" w-20 pa2 br5 ma1 " onClick={clearData}>
@@ -63,20 +64,26 @@ function buttons({ handleClick, clearData, deleteBtn, evaluateInput }) {
       <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
         .
       </button>
-      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+      <button className=" w-20 pa2 br5 ma1 " data-action="percentage" onClick={handleClick}>
         %
       </button>
       <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
         +
       </button>
 
-      <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
+      <button className=" w-20 pa2 br5 ma1 " id="squareRoot" onClick={handleSqrt}>
         &radic;
       </button>
       <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
         ^
       </button>
-      <button className="  pa2 br5 ma1 equal" onClick={evaluateInput}>
+      <button
+        className="  pa2 br5 ma1 equal"
+        onClick={() => {
+          evaluateInput();
+          // squareRoot();
+        }}
+      >
         =
       </button>
     </div>
