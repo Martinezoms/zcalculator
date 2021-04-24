@@ -5,20 +5,11 @@ import './displayScreen.css';
 function DisplayScreen({ input, output }) {
   const handleChange = () => {};
 
-  const handleKeyPress = (e) => {
-    return input + e.key;
-  };
   return (
     <div>
-      <form className="flex flex-column display pa2">
+      <form className="flex flex-column display pa3">
         <textarea className="output-screen" rows="5" readOnly value={output}></textarea>
-        <textarea
-          className="input-screen"
-          rows="2"
-          value={input}
-          onChange={handleChange}
-          onKeyPress={handleKeyPress}
-        ></textarea>
+        <textarea className="input-screen" rows="2" value={input} onChange={handleChange}></textarea>
       </form>
     </div>
   );

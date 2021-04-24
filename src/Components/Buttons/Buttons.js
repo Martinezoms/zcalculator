@@ -29,7 +29,7 @@ function buttons({ handleClick, clearData, deleteBtn, evaluateInput, handleSqrt,
         9
       </button>
       <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
-        &#247;
+        /
       </button>
 
       <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
@@ -77,13 +77,7 @@ function buttons({ handleClick, clearData, deleteBtn, evaluateInput, handleSqrt,
       <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
         ^
       </button>
-      <button
-        className="  pa2 br5 ma1 equal"
-        onClick={() => {
-          evaluateInput();
-          // squareRoot();
-        }}
-      >
+      <button className="  pa2 br5 ma1 equal" onClick={evaluateInput}>
         =
       </button>
     </div>
