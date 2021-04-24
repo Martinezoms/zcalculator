@@ -2,7 +2,7 @@ import React from 'react';
 
 import './buttons.css';
 
-function buttons({ handleClick, clearData, deleteBtn, evaluateInput, handleSqrt }) {
+function buttons({ handleClick, clearData, deleteBtn, evaluateInput, handleSqrt, handlePercentage }) {
   // const sqroot = '&radic';
   return (
     <div className="flex flex-wrap buttons">
@@ -64,7 +64,7 @@ function buttons({ handleClick, clearData, deleteBtn, evaluateInput, handleSqrt 
       <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>
         .
       </button>
-      <button className=" w-20 pa2 br5 ma1 " data-action="percentage" onClick={handleClick}>
+      <button className=" w-20 pa2 br5 ma1 " id="percentage" onClick={handlePercentage}>
         %
       </button>
       <button className=" w-20 pa2 br5 ma1 " onClick={handleClick}>

@@ -34,6 +34,13 @@ function CalculatorV() {
       setInput(output);
     }
   };
+  const handlePercentage = (data) => {
+    setInput(input);
+    if (data.target.id === 'percentage' || input.includes(Number)) {
+      setOutput(evaluate(input / 100));
+      setInput(output);
+    }
+  };
 
   return (
     <div className="center center frame w-70 w-50-m w-25-l ma5 shadow-3">
@@ -45,6 +52,7 @@ function CalculatorV() {
         deleteBtn={deleteBtn}
         evaluateInput={evaluateInput}
         handleSqrt={handleSqrt}
+        handlePercentage={handlePercentage}
       />
     </div>
   );
