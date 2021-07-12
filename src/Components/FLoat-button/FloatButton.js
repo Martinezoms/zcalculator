@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './floatButton.css';
 import LightMode from '../../Icons/lightMode.svg';
 import rotate from '../../Icons/rotate.svg';
 import calcHistory from '../../Icons/calcHistory.png';
 import darkMode from '../../Icons/darkMode.svg';
 
-export default function floatButton() {
+function FloatButton() {
+  const [isButton, setButton] = useState(false);
+  const clickIcon = () => {
+    setButton(!isButton);
+  };
   return (
     <div className="wrapper">
       <input id="triggerButton" className="triggerButton" type="checkbox" />
@@ -18,8 +22,8 @@ export default function floatButton() {
       </div>
       <div className="two fa fa-twitter">
         <div>
-          <img src={LightMode} alt="LightMode" />
-          <img src={darkMode} alt="darkMode" />
+          <img src={isButton ? LightMode : darkMode} alt="LightMode" onClick={clickIcon} />
+          {/* <img src={darkMode} alt="darkMode" /> */}
         </div>
       </div>
       <div className="three fa fa-instagram">
@@ -30,3 +34,5 @@ export default function floatButton() {
     </div>
   );
 }
+
+export default FloatButton;

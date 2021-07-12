@@ -98,13 +98,13 @@ body {
 }
 
 .triggerButton:checked ~ .two {
-  background-color: slateblue;
+  background-color: inherit;
   transform: translateX(-3.5em) translateY(-3.5em);
   transition-delay: 0.1s;
 }
 
 .triggerButton:checked ~ .three {
-  background-color: mediumorchid;
+  background-color: inherit;
   transform: translateY(-5em);
 }
 
