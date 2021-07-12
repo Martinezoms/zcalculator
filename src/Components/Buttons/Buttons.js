@@ -3,7 +3,6 @@ import React from 'react';
 import './buttons.css';
 
 function buttons({ handleClick, clearData, deleteBtn, evaluateInput, handleSqrt, handlePercentage }) {
-  // const sqroot = '&radic';
   return (
     <div className="flex flex-wrap buttons">
       <button className=" w-20 pa2 br5 ma1 " onClick={clearData}>

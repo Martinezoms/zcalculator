@@ -1,5 +1,4 @@
 body {
-  /* display: flex; */
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -13,12 +12,6 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-
-  /* max-width: 600px; */
-  /* width: 100%; */
-  /* height: 100%; */
-  /* background: inherit; */
-  /* position: relative; */
 }
 
 .triggerButton {
@@ -27,7 +20,7 @@ body {
 
 .triggerButton + label {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   right: 1em;
   bottom: 1em;
   background-color: rgb(29, 161, 242);
@@ -75,12 +68,12 @@ body {
 .two,
 .three {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
+  padding: 5px;
   right: 1em;
   bottom: 1em;
-  padding: 1em;
-  width: 1em;
-  height: 1em;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   opacity: 0;
   z-index: 1;
@@ -95,11 +88,11 @@ body {
 .triggerButton:checked ~ .one,
 .triggerButton:checked ~ .two,
 .triggerButton:checked ~ .three {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .triggerButton:checked ~ .one {
-  background-color: purple;
+  background-color: inherit;
   transform: translateX(-5em);
   transition-delay: 0.2s;
 }
@@ -118,5 +111,16 @@ body {
 .triggerButton:checked ~ .one:hover,
 .triggerButton:checked ~ .two:hover,
 .triggerButton:checked ~ .three:hover {
-  opacity: 0.5;
+  opacity: 1;
+}
+
+.iconHolder img {
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  opacity: 2;
+  position: absolute;
+  background-color: inherit;
 }

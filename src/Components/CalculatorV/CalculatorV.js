@@ -24,7 +24,6 @@ function CalculatorV() {
   const evaluateInput = () => {
     setInput(input);
     setOutput(evaluate(input));
-    setInput(output);
   };
 
   const handleSqrt = (data) => {
