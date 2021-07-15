@@ -7,6 +7,7 @@ import darkMode from '../../Icons/darkMode.svg';
 
 function FloatButton() {
   const [isButton, setButton] = useState(false);
+  // const [theme, setTheme] = useState('dark');
   const clickIcon = () => {
     setButton(!isButton);
   };
@@ -16,14 +17,19 @@ function FloatButton() {
       <label htmlFor="triggerButton" className="grow shadow-5 pulse"></label>
 
       <div className="one fa fa-facebook">
-        <div classname="iconHolder">
+        <div classname="iconHolder grow pulse">
           <img src={rotate} alt="rotate" />
         </div>
       </div>
       <div className="two fa fa-twitter">
         <div>
-          <img src={isButton ? LightMode : darkMode} alt="LightMode" onClick={clickIcon} />
-          {/* <img src={darkMode} alt="darkMode" /> */}
+          <img
+            src={isButton ? LightMode : darkMode}
+            alt="LightMode"
+            onClick={() => {
+              clickIcon();
+            }}
+          />
         </div>
       </div>
       <div className="three fa fa-instagram">
