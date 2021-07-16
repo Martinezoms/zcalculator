@@ -5,7 +5,7 @@ import rotate from '../../Icons/rotate.svg';
 import calcHistory from '../../Icons/calcHistory.png';
 import darkMode from '../../Icons/darkMode.svg';
 
-function FloatButton() {
+function FloatButton({ themeToggler }) {
   const [isButton, setButton] = useState(false);
   // const [theme, setTheme] = useState('dark');
   const clickIcon = () => {
@@ -17,7 +17,7 @@ function FloatButton() {
       <label htmlFor="triggerButton" className="grow shadow-5 pulse"></label>
 
       <div className="one fa fa-facebook">
-        <div classname="iconHolder grow pulse">
+        <div>
           <img src={rotate} alt="rotate" />
         </div>
       </div>
@@ -28,6 +28,7 @@ function FloatButton() {
             alt="LightMode"
             onClick={() => {
               clickIcon();
+              themeToggler();
             }}
           />
         </div>
