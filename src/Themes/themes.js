@@ -2,17 +2,20 @@ import { createGlobalStyle } from 'styled-components';
 
 export const lightMode = {
   body: 'white',
-  color: 'black',
+  font: 'black',
   fontColor: 'black'
 };
 
 export const darkMode = {
   body: 'black',
-  color: 'white',
-  fontCcolor: 'white'
+  font: 'white',
+  fontColor: 'white'
 };
 
 export const GlobalStyle = createGlobalStyle`
 body {
   background-color : ${(props) => props.theme.body}
+}
+font {
+  font:${(props) => props.theme.font}
 }`;
