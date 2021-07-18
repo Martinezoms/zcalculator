@@ -44,6 +44,7 @@ function CalculatorV() {
   return (
     <div className="center center frame w-70 w-50-m w-25-l ma5 shadow-3">
       <h3>Zcalculator</h3>
+
       <DisplayScreen input={input} output={output} />
       <Buttons
         handleClick={handleClick}
