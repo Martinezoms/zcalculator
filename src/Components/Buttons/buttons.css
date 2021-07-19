@@ -1,6 +1,9 @@
 .buttons {
   justify-content: space-between;
 }
+button {
+  cursor: pointer;
+}
 
 .equal {
   background: rgb(29, 161, 242);
