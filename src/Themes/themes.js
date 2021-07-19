@@ -2,20 +2,25 @@ import { createGlobalStyle } from 'styled-components';
 
 export const lightMode = {
   body: 'white',
-  font: 'black',
-  fontColor: 'black'
+  color: 'black'
 };
 
 export const darkMode = {
   body: 'black',
-  font: 'white',
-  fontColor: 'white'
+  color: 'white'
 };
 
 export const GlobalStyle = createGlobalStyle`
 body {
-  background-color : ${(props) => props.theme.body}
+  background : ${(props) => props.theme.body};
+  color : ${(props) => props.theme.color};
 }
-font {
-  font:${(props) => props.theme.font}
-}`;
+button {
+  background : ${(props) => props.theme.body};
+  color : ${(props) => props.theme.color};
+  shadow : ${(props) => props.theme.body}
+}
+textarea{
+  color : ${(props) => props.theme.color}
+}
+`;
