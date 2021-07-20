@@ -7,7 +7,6 @@ import darkMode from '../../Icons/darkMode.svg';
 
 function FloatButton({ themeToggler }) {
   const [isButton, setButton] = useState(false);
-  // const [theme, setTheme] = useState('dark');
   const clickIcon = () => {
     setButton(!isButton);
   };
