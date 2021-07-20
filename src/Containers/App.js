@@ -16,7 +16,6 @@ function App() {
   return (
     <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>
       <GlobalStyle />
-      <History />
       <div className="w-100 center center  App h-100 ">
         <CalculatorV />
         <FloatButton themeToggler={themeToggler} />

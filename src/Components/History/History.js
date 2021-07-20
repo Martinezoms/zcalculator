@@ -1,10 +1,13 @@
-import React from 'react';
-import './History.css';
-
 function History() {
   return (
-    <div className="history">
-      <li></li>
+    <div>
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+      <p>5</p>
+      <p>6</p>
+      <p>7</p>
     </div>
   );
 }
