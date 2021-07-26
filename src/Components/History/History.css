@@ -1,10 +1,17 @@
+.openHistory {
+  background-color: red;
+  position: absolute;
+  left: 84%;
+  bottom: 40%;
+  width: 20rem;
+  overflow: visible;
+}
 
-
-
-
-
-
-
-
-
-
+.closeHistory {
+  background-color: red;
+  position: absolute;
+  left: 100%;
+  bottom: 40%;
+  width: 20rem;
+  overflow: visible;
+}
