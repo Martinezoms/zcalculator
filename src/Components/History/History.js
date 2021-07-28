@@ -1,6 +1,7 @@
 function History({ history }) {
   return (
-    <div className={history === true ? 'openHistory' : 'closeHistory'}>
+    <div className={history === true ? 'openHistory ' : 'closeHistory '}>
+      <p className="closeButton">X</p>
       <p>1</p>
       <p>2</p>
       <p>3</p>
