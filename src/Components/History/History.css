@@ -1,17 +1,19 @@
 .openHistory {
   background-color: red;
-  position: absolute;
+  position: fixed;
   left: 84%;
   bottom: 40%;
   width: 20rem;
   overflow: visible;
+  transition: all 0.4s ease;
 }
 
 .closeHistory {
   background-color: red;
-  position: absolute;
+  position: fixed;
   left: 100%;
   bottom: 40%;
   width: 20rem;
   overflow: visible;
+  transition: all 0.4s ease;
 }
