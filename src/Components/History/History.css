@@ -1,31 +1,28 @@
 .openHistory {
   background-color: red;
   position: fixed;
-  left: 84%;
+  right: 0;
   bottom: 40%;
-  width: 20rem;
-  overflow: auto;
-  transition: all 0.4s ease;
+  width: 100%;
+  max-width: 350px;
+  overflow: hidden;
+  transition: all 1s ease;
 }
 
 .closeHistory {
   background-color: red;
   position: fixed;
-  left: 100%;
+  right: 0;
   bottom: 40%;
-  width: 20rem;
-  overflow: auto;
+  width: 0;
+  max-width: 350px;
+  overflow: hidden;
   transition: all 0.4s ease;
-}
-
-@media screen and (max-width: 1768.16px) {
-  .openHistory {
-    position: fixed;
-  }
 }
 
 .closeButton {
   position: absolute;
   left: 95%;
   bottom: 85%;
+  cursor: pointer;
 }

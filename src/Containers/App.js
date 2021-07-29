@@ -23,7 +23,7 @@ function App() {
       <GlobalStyle />
       <div className="w-100 center center  App h-100 ">
         <CalculatorV />
-        <History history={history} className="aside" />
+        <History history={history} />
         <FloatButton themeToggler={themeToggler} showHistory={showHistory} />
       </div>
     </ThemeProvider>
