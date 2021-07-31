@@ -4,9 +4,11 @@
   right: 0;
   bottom: 40%;
   width: 100%;
+  height: 100%;
   max-width: 350px;
+  max-height: 300px;
   overflow: hidden;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .closeHistory {
@@ -14,15 +16,26 @@
   position: fixed;
   right: 0;
   bottom: 40%;
+  height: 100%;
   width: 0;
   max-width: 350px;
+  max-height: 300px;
   overflow: hidden;
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 }
 
 .closeButton {
+  padding: 5px;
+  margin: 0;
   position: absolute;
-  left: 95%;
-  bottom: 85%;
   cursor: pointer;
+  right: 5%;
+  top: 0%;
+}
+
+.historyOutput {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
