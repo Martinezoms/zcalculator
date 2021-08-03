@@ -13,7 +13,8 @@ export const darkMode = {
   btnColor: '#2f2f2f',
   btnBorderColor: '#000000',
   border: '3px solid rgb(103, 99, 99)',
-  hoverBackground: '#454444'
+  hoverBackground: '#454444',
+  onClickButton: '#2f2f2f'
 };
 
 export const GlobalStyle = createGlobalStyle`
@@ -37,5 +38,8 @@ textarea{
 .frame {
 border: ${(props) => props.theme.border};
 
+}
+button:active {
+  background: ${(props) => props.theme.onClickButton}
 }
 `;
