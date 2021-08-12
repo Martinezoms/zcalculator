@@ -4,7 +4,7 @@ import DisplayScreen from '../Display-screen/DisplayScreen';
 import Buttons from '../Buttons/Buttons';
 import { evaluate, sqrt } from 'mathjs';
 
-function CalculatorV() {
+function CalculatorV({ setLocalHistory }) {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
 
@@ -24,6 +24,17 @@ function CalculatorV() {
   const evaluateInput = () => {
     setInput(input);
     setOutput(evaluate(input));
+    let history = JSON.parse(localStorage.getItem('history'));
+    if (history === null) {
+      history = [];
+    }
+    const newCalc = {
+      input,
+      output: evaluate(input)
+    };
+    const newHistory = [...history, newCalc];
+    localStorage.setItem('history', JSON.stringify(newHistory));
+    setLocalHistory(newHistory);
   };
 
   const handleSqrt = (data) => {
