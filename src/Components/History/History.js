@@ -7,7 +7,7 @@ function History({ history, setHistory, localHistory, clearHistory }) {
   };
 
   return (
-    <div className={history === true ? 'openHistory b--light-silver br3 pa1' : 'closeHistory b--light-silver br3'}>
+    <div className={history === true ? 'openHistory b--light-silver br3 pa1' : 'closeHistory b--light-silver br3 pa1'}>
       <div>
         <div>
           <div>
@@ -24,7 +24,7 @@ function History({ history, setHistory, localHistory, clearHistory }) {
               {localHistory.map((history, i) => (
                 <div className=" bb b--light-silver pa1">
                   <h6>{history.input}</h6>
-                  <h5> ={history.output}</h5>
+                  <h5> {history.output}</h5>
                 </div>
               ))}
             </Scroll>
