@@ -1,12 +1,19 @@
 import Scroll from '../Scroll/scroll';
+import '../History/History.css';
 
-function History({ history, localHistory }) {
+function History({ history, setHistory, localHistory, clearHistory }) {
+  const hideHistoryDrawer = () => {
+    setHistory(false);
+  };
+
   return (
-    <div className={history === true ? 'openHistory b--light-silver br3 pa1' : 'closeHistory b--light-silver br3 pa1'}>
+    <div className={history === true ? 'openHistory b--light-silver br3 pa1' : 'closeHistory b--light-silver br3'}>
       <div>
         <div>
           <div>
-            <p className="closeButton">X</p>
+            <div className="closeButton" onClick={hideHistoryDrawer}>
+              X
+            </div>
           </div>
           <div className="b--light-silver br3 pa1">
             <div>
@@ -21,6 +28,11 @@ function History({ history, localHistory }) {
                 </div>
               ))}
             </Scroll>
+            <div>
+              <button className="pa2 br5 ma1 clearHistory" onClick={clearHistory}>
+                Clear History
+              </button>
+            </div>
           </div>
         </div>
       </div>

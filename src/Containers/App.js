@@ -29,13 +29,17 @@ function App() {
     }
     setLocalHistory(history);
   };
+  const clearHistory = () => {
+    localStorage.clear();
+    setLocalHistory([]);
+  };
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>
       <GlobalStyle />
       <div className="w-100 center center  App h-100 ">
         <CalculatorV setLocalHistory={setLocalHistory} />
-        <History history={history} localHistory={localHistory} />
+        <History history={history} setHistory={setHistory} localHistory={localHistory} clearHistory={clearHistory} />
         <FloatButton themeToggler={themeToggler} showHistory={showHistory} />
       </div>
     </ThemeProvider>

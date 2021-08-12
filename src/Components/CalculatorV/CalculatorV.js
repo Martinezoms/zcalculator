@@ -34,6 +34,7 @@ function CalculatorV({ setLocalHistory }) {
     };
     const newHistory = [...history, newCalc];
     localStorage.setItem('history', JSON.stringify(newHistory));
+
     setLocalHistory(newHistory);
   };
 
