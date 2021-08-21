@@ -6,7 +6,8 @@ export const lightMode = {
   btnColor: '-internal-light-dark(rgb(239,239,239), rgb(59,59,59))',
   btnBorderColor: '-internal-light-dark(rgb(118,118,118),rgb(133,133,133))',
   closeButton: '#00000080',
-  closeButtonOnHover: 'black'
+  closeButtonOnHover: 'black',
+  historyHover: '#cccccc'
 };
 
 export const darkMode = {
@@ -18,7 +19,8 @@ export const darkMode = {
   hoverBackground: '#454444',
   onClickButton: '#2f2f2f',
   closeButton: '#ffffff78',
-  closeButtonOnHover: 'white'
+  closeButtonOnHover: 'white',
+  historyHover: '#323232'
 };
 
 export const GlobalStyle = createGlobalStyle`
@@ -54,5 +56,8 @@ button:active {
 }
 .closeButton:hover {
   color : ${(props) => props.theme.closeButtonOnHover}
+}
+h5:hover{
+  background: ${(props) => props.theme.historyHover}
 }
 `;

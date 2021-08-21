@@ -1,9 +1,13 @@
 import Scroll from '../Scroll/scroll';
 import '../History/History.css';
 
-function History({ history, setHistory, localHistory, clearHistory }) {
+function History({ history, setHistory, localHistory, clearHistory, setInput, setOutput }) {
   const hideHistoryDrawer = () => {
     setHistory(false);
+  };
+  const getHistoryInput = (e) => {
+    setOutput('');
+    setInput(e.target.innerText);
   };
 
   return (
@@ -22,9 +26,11 @@ function History({ history, setHistory, localHistory, clearHistory }) {
 
             <Scroll>
               {localHistory.map((history, i) => (
-                <div className=" bb b--light-silver pa1">
-                  <h6>{history.input}</h6>
-                  <h5> {history.output}</h5>
+                <div className=" bb b--light-silver pa1 history">
+                  <h6 className="pointer">{history.input}</h6>
+                  <h5 onClick={getHistoryInput} className="pointer">
+                    {history.output}
+                  </h5>
                 </div>
               ))}
             </Scroll>

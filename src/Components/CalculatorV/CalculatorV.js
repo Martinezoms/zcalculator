@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import DisplayScreen from '../Display-screen/DisplayScreen';
 import Buttons from '../Buttons/Buttons';
 import { evaluate, sqrt } from 'mathjs';
 
-function CalculatorV({ setLocalHistory }) {
-  const [input, setInput] = useState('');
-  const [output, setOutput] = useState('');
-
+function CalculatorV({ input, output, setInput, setOutput, setLocalHistory }) {
   const handleClick = (anElement) => {
     setInput(input + anElement.target.innerText);
   };

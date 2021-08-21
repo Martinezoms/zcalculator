@@ -9,8 +9,11 @@ import 'tachyons';
 import './App.css';
 
 function App() {
+  const [input, setInput] = useState('');
+  const [output, setOutput] = useState('');
   const [theme, setTheme] = useState('light');
   const [localHistory, setLocalHistory] = useState([]);
+
   useEffect(() => {
     getHistory();
   }, []);
@@ -38,8 +41,21 @@ function App() {
     <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>
       <GlobalStyle />
       <div className="w-100 center center  App h-100 ">
-        <CalculatorV setLocalHistory={setLocalHistory} />
-        <History history={history} setHistory={setHistory} localHistory={localHistory} clearHistory={clearHistory} />
+        <CalculatorV
+          input={input}
+          output={output}
+          setInput={setInput}
+          setOutput={setOutput}
+          setLocalHistory={setLocalHistory}
+        />
+        <History
+          history={history}
+          setHistory={setHistory}
+          localHistory={localHistory}
+          clearHistory={clearHistory}
+          setInput={setInput}
+          setOutput={setOutput}
+        />
         <FloatButton themeToggler={themeToggler} showHistory={showHistory} />
       </div>
     </ThemeProvider>
