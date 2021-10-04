@@ -26,7 +26,7 @@ function History({ history, setHistory, localHistory, clearHistory, setInput, se
 
             <Scroll>
               {localHistory.map((history, i) => (
-                <div className=" bb b--light-silver pa1 history">
+                <div className=" bb b--light-silver pa1 history" key={i}>
                   <h6 className="pointer">{history.input}</h6>
                   <h5 onClick={getHistoryInput} className="pointer">
                     {history.output}
