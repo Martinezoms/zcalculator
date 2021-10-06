@@ -1,75 +1,31 @@
-# This is a work in progress, but you can view the web application by using the link https://zcalculator.netlify.app/
+# Zcalculator
+A simple web application calculator with history and dark mode features
+
+# About
+  Zcalculator is just like any other simple calculator, but with a little bit of additional features. It carries out calculations using the mathjs library. It also has the feature of storing previous calculations and can be accessed on the 'history' drawer. You can also choose a prefered colour mode (that is light and adrk modes).
+  
+# Why Zcalculator
+  The process of building this web application helped me to practise and get more familiar with react-hooks and also how to use the local storage. It also allowed me to experience how aiding it is to use libraries in your development, which is amazing, time saving and productive. And yes, I also got to understand how to build themes for your applications in a more productive and efficient way. So this web application counts as a process or means of acquiring knowledge and implementing them to achieve results.
+  
+# Functionality
+  Zcalculator is made up of pretty simple components: the calculator box which is made up of the display screen and the buttons, a float button by the right-bottom where you can access other features, and a history drawer.
+  The display screen is made up of the input section and the output section. The float button consist of the history, dark mode and rotate(coming soon) buttons/icons which when clicked, carries out the functions.
+  
+
+![scrnli_10_6_2021_8-11-31 PM](https://user-images.githubusercontent.com/65704793/136268517-8507b03f-0d30-424d-86e4-346adfa068f6.png)
+
+
+![scrnli_10_6_2021_8-11-56 PM](https://user-images.githubusercontent.com/65704793/136272558-5bbf398a-5178-4182-87e2-e57acf223f00.png)
+
+
+![scrnli_10_6_2021_8-12-55 PM](https://user-images.githubusercontent.com/65704793/136272653-44c74ca4-d4c1-4729-a908-a0634de66a57.png)
+
+
+![scrnli_10_6_2021_8-12-37 PM](https://user-images.githubusercontent.com/65704793/136272736-b3d1a886-5561-4c3b-805b-afc3d8172c09.png)
 
 
 
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# For local installation :
+- Clone the repository by using the command   ```$ git clone https://github.com/Martinezoms/zcalculator.git ```
+- ```$ npm install```  to install dependencies used in building the web application.
+- ```$ npm start```  to start the web application.
